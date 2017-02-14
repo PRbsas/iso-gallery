@@ -1,0 +1,104 @@
+body {
+	color: #050505;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+	font-size: 18px;
+}
+
+
+header {
+  padding-bottom: 1em;
+	text-align: center;
+}
+
+.title {
+  margin: 0;
+  padding: 1em 0 0;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+
+.main-area {
+	padding: 1em;
+}
+
+.gallery {
+	margin: 0 auto;
+	max-width: 80em;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	transition: all .2s;
+}
+
+.photo {
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+
+
+@media screen and (min-width: 40em) {
+	.photo {
+		width: 50%;
+	}
+	.double {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.photo {
+		width: 33%;
+	}
+	.double {
+		width: 66%;
+	}
+}
+
+@media screen and (min-width: 80em) {
+	.photo {
+		width: 25%;
+	}
+	.double {
+		width: 50%;
+	}
+}
+
+
+.photo figure {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+.photo img {
+	display: block;
+	width: 100%;
+}
+
+.photo figcaption {
+	position: absolute;
+	box-sizing: border-box;
+	bottom: -4em;
+	width: 100%;
+	padding: 0 1em;
+	background: hsla(100, 100%, 100%, .75);
+	transition: bottom .2s;
+}
+
+.photo h2 {
+	font-size: 1.2em;
+	font-weight: lighter;
+}
+
+.photo a {
+	color: black;
+}
+
+.photo a:hover figcaption {
+	bottom: 0;
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "imagesloaded": "^4.1.1",
+    "isotope-layout": "^3.0.2",
+    "isotope-masonry-horizontal": "^2.0.0"
+  }
+}
